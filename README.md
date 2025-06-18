@@ -1,46 +1,3 @@
-```
-orchestrator/
-├── config-service/
-│   ├── app.py                # Placeholder for config service implementation
-│   └── Dockerfile            # Placeholder Dockerfile
-│
-├── orchestrator/
-│   └── orchestrator.py       # Placeholder for the orchestrator logic
-│
-├── services.json             # List of URLs the orchestrator will query
-├── README.md                 # Instructions and explanation
-```
-
-# config-service/app.py
-"""
-Placeholder for a simple web server exposing GET /config
-Returns JSON config built from env vars or a config file.
-"""
-
-# config-service/Dockerfile
-"""
-Placeholder Dockerfile to containerize the config service
-"""
-
-# orchestrator/orchestrator.py
-"""
-Placeholder script to query multiple local instances of config-service
-Reads URLs from services.json and prints config responses
-"""
-
-# services.json
-```
-[
-  "http://localhost:8001",
-  "http://localhost:8002",
-  "http://localhost:8003"
-]
-```
-
-# README.md
-"""
-# Local RPA Orchestrator Exercise
-
 ## Objective
 
 Simulate a simple orchestration environment:
@@ -53,6 +10,46 @@ Simulate a simple orchestration environment:
 - `config-service/`: The microservice that returns instance configuration.
 - `orchestrator/`: A script to query running config-service containers.
 - `services.json`: List of services to query.
+  
+```
+/
+├── config-service/
+│   ├── app.py                # Placeholder for config service implementation
+│   └── Dockerfile            # Placeholder Dockerfile
+│
+├── orchestrator/
+│   └── orchestrator.py       # Placeholder for the orchestrator logic
+│
+├── services.json             # List of URLs the orchestrator will query
+├── README.md                 # Instructions and explanation
+```
+
+### config-service/app.py
+"""
+Create a simple web server exposing GET /config
+Returns JSON config built from env vars or a config file.
+"""
+
+### config-service/Dockerfile
+"""
+Create a Dockerfile to containerize the config service
+"""
+
+### orchestrator/orchestrator.py
+"""
+Create a script to query multiple local instances of config-service
+Reads URLs from services.json and prints config responses
+"""
+
+### services.json
+```
+[
+  "http://localhost:8001",
+  "http://localhost:8002",
+  "http://localhost:8003"
+]
+```
+
 
 ## Instructions
 
@@ -81,4 +78,3 @@ Simulate a simple orchestration environment:
 ---
 
 Good luck! 🚀
-"""
