@@ -1,4 +1,5 @@
-rpa-local-orchestrator/
+```
+orchestrator/
 ├── config-service/
 │   ├── app.py                # Placeholder for config service implementation
 │   └── Dockerfile            # Placeholder Dockerfile
@@ -8,6 +9,7 @@ rpa-local-orchestrator/
 │
 ├── services.json             # List of URLs the orchestrator will query
 ├── README.md                 # Instructions and explanation
+```
 
 # config-service/app.py
 """
@@ -27,11 +29,13 @@ Reads URLs from services.json and prints config responses
 """
 
 # services.json
+```
 [
   "http://localhost:8001",
   "http://localhost:8002",
   "http://localhost:8003"
 ]
+```
 
 # README.md
 """
